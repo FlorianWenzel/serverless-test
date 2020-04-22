@@ -6,7 +6,7 @@ app.get("/", async (req, res) => {
   res.sendFile(__dirname + "/dist/index.html");
 });
 
-app.get("register", async (req, res) => {
+app.get("/register", async (req, res) => {
   res.send({ msg: "THIS IS the /register ENDPINT" })
 })
 

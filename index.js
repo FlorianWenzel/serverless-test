@@ -1,7 +1,7 @@
 const app = require("express")();
 const http = require("http").createServer(app);
 
-app.get("*", async (req, res) => {
+app.get("/", async (req, res) => {
   console.log('this')
   res.sendFile(__dirname + "/dist/index.html");
 });
